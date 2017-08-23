@@ -38,6 +38,8 @@ namespace WebAppAspCoreHello
         {
 			//тест гита
 			//тест гита апдейтед
+			
+			//caboop beep bup more comments pls
             
 
             app.UseDirectoryBrowser(new DirectoryBrowserOptions()
