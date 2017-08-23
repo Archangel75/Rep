@@ -1,0 +1,11 @@
+E:\C#\WebAppAspCoreHello\WebAppAspCoreHello\bin\Debug\netcoreapp2.0\WebAppAspCoreHello.deps.json
+E:\C#\WebAppAspCoreHello\WebAppAspCoreHello\bin\Debug\netcoreapp2.0\WebAppAspCoreHello.runtimeconfig.json
+E:\C#\WebAppAspCoreHello\WebAppAspCoreHello\bin\Debug\netcoreapp2.0\WebAppAspCoreHello.runtimeconfig.dev.json
+E:\C#\WebAppAspCoreHello\WebAppAspCoreHello\bin\Debug\netcoreapp2.0\WebAppAspCoreHello.dll
+E:\C#\WebAppAspCoreHello\WebAppAspCoreHello\bin\Debug\netcoreapp2.0\WebAppAspCoreHello.pdb
+E:\C#\WebAppAspCoreHello\WebAppAspCoreHello\obj\Debug\netcoreapp2.0\WebAppAspCoreHello.csprojResolveAssemblyReference.cache
+E:\C#\WebAppAspCoreHello\WebAppAspCoreHello\obj\Debug\netcoreapp2.0\WebAppAspCoreHello.csproj.CoreCompileInputs.cache
+E:\C#\WebAppAspCoreHello\WebAppAspCoreHello\obj\Debug\netcoreapp2.0\WebAppAspCoreHello.AssemblyInfoInputs.cache
+E:\C#\WebAppAspCoreHello\WebAppAspCoreHello\obj\Debug\netcoreapp2.0\WebAppAspCoreHello.AssemblyInfo.cs
+E:\C#\WebAppAspCoreHello\WebAppAspCoreHello\obj\Debug\netcoreapp2.0\WebAppAspCoreHello.dll
+E:\C#\WebAppAspCoreHello\WebAppAspCoreHello\obj\Debug\netcoreapp2.0\WebAppAspCoreHello.pdb
