@@ -42,7 +42,11 @@ namespace WebAppAspCoreHello
 			//caboop beep bup more comments pls
             //buiasehugjea
 			
+<<<<<<< HEAD
 			//more merges to god of merges
+=======
+			//it`s master detka
+>>>>>>> master
 
             app.UseDirectoryBrowser(new DirectoryBrowserOptions()
             {
