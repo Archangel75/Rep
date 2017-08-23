@@ -40,7 +40,7 @@ namespace WebAppAspCoreHello
 			//тест гита апдейтед
 			
 			//caboop beep bup more comments pls
-            
+            //buiasehugjea
 
             app.UseDirectoryBrowser(new DirectoryBrowserOptions()
             {
