@@ -41,6 +41,8 @@ namespace WebAppAspCoreHello
 			
 			//caboop beep bup more comments pls
             //buiasehugjea
+			
+			//it`s master detka
 
             app.UseDirectoryBrowser(new DirectoryBrowserOptions()
             {
