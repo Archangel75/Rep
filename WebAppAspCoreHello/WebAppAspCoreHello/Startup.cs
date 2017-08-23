@@ -36,7 +36,8 @@ namespace WebAppAspCoreHello
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, TimeService ts)
         {
-
+			//тест гита
+			//тест гита апдейтед
             
 
             app.UseDirectoryBrowser(new DirectoryBrowserOptions()
