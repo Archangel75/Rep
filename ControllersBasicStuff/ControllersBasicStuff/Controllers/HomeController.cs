@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ControllersBasicStuff.Util;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,11 +14,20 @@ namespace ControllersBasicStuff.Controllers
             return View();
         }
 
+
+        public ActionResult GetHtml()
+        {
+            return new HtmlResult("<h2>Дратути</h2>");
+        }
+
+
+
         public string GetId(int id)
         {
 
             return id.ToString();
         }
+
 
         [HttpGet]        
         public ActionResult GetCar()
