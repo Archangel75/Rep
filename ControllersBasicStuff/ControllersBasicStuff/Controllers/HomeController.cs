@@ -16,7 +16,7 @@ namespace ControllersBasicStuff.Controllers
 
         public ActionResult GetImage()
         {
-            string path = "../Content/Images/yz9uxVlpO0U.jpeg";
+            string path = "../Content/Images/yz9uxVlpO0U.jpg";
             return new ImageResult(path);
         }
 
