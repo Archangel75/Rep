@@ -26,9 +26,10 @@ namespace ControllersBasicStuff.Controllers
         }
 
         [HttpPost]
-        public string GetCar(string title, string model)
+        public string PostCar()
         {
-
+            string title = Request.Form["title"];
+            string model= Request.Form["model"];
             return title + " " + model;
         }
 
