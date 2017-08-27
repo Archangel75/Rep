@@ -14,6 +14,13 @@ namespace ControllersBasicStuff.Controllers
             return View();
         }
 
+        public ActionResult GetImage()
+        {
+            string path = "../Content/Images/yz9uxVlpO0U.jpeg";
+            return new ImageResult(path);
+        }
+
+
 
         public ActionResult GetHtml()
         {
