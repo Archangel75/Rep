@@ -35,6 +35,5 @@ namespace WebAppMvc1.Controllers
             carDb.SaveChanges();
             return "Спасибо за покупку!";
         }
-
     }
 }
