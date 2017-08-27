@@ -19,5 +19,22 @@ namespace WebAppMvc1.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult Buy(int id)
+        {
+            ViewBag.CarId = id;
+            return View();
+        }
+
+
+        [HttpPost]
+        public string Buy(Purchase purchase)
+        {
+            purchase.DatePurchase = DateTime.Now;
+            carDb.Purchases.Add(purchase);
+            carDb.SaveChanges();
+            return "Спасибо за покупку!";
+        }
+
     }
 }

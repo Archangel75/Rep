@@ -9,6 +9,7 @@
             <td>Название машины</td>
             <td>Модель</td>
             <td>Цена</td>
+            <td></td>
         </tr>
         @foreach (var car in ViewBag.Cars)
         {
@@ -16,6 +17,7 @@
                 <td><p>@car.Name</p></td>
                 <td><p>@car.Model</p></td>
                 <td><p>@car.Price</p></td>
+                <td><p><a href="/Home/Buy/@car.id">Купить машину</a></p></td>
             </tr>
         }
     </table>
