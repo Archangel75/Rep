@@ -12,7 +12,7 @@ namespace ControllersBasicStuff.Controllers
         {
             string ip = requestContext.HttpContext.Request.UserHostAddress;
             var responce = requestContext.HttpContext.Response;
-            responce.Write("<h2>Ваш ip: " + ip + "</h2>");            
+            responce.Write("<h3>Ваш ip: " + ip + "</h3>");            
         }
     }
 }
