@@ -13,7 +13,7 @@ namespace WebAppMvc1.Models
 
         public string Address { get; set; }
 
-        public int BookId { get; set; }
+        public int CarId { get; set; }
 
         public DateTime DatePurchase { get; set; }
     }
