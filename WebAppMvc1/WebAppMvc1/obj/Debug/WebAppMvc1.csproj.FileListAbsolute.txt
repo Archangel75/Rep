@@ -95,3 +95,7 @@ E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\WebAppMvc1.csprojResolveAssemblyRe
 E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\WebAppMvc1.csproj.CoreCompileInputs.cache
 E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\WebAppMvc1.dll
 E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\WebAppMvc1.pdb
+E:\Repository\WebAppMvc1\WebAppMvc1\bin\EntityFramework.dll
+E:\Repository\WebAppMvc1\WebAppMvc1\bin\EntityFramework.SqlServer.dll
+E:\Repository\WebAppMvc1\WebAppMvc1\bin\EntityFramework.xml
+E:\Repository\WebAppMvc1\WebAppMvc1\bin\EntityFramework.SqlServer.xml
