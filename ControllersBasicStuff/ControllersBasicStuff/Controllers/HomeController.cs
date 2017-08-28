@@ -35,14 +35,14 @@ namespace ControllersBasicStuff.Controllers
         public void GetData()
         {
             string id = Request.Cookies["id"].Value;
-            Response.Write(id);
+            Response.Write(id + " " + Session["name"]);
             
         }
 
         public ActionResult Index()
         {
             Response.Cookies["id"].Value = "ca-4353w";
-
+            Session["name"] = "Tom";
             string path = "~/Content/Images/yz9uxVlpO0U.jpg";
             if (System.IO.File.Exists(Server.MapPath(path)))
             {
