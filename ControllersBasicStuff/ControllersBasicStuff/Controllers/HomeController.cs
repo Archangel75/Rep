@@ -34,6 +34,11 @@ namespace ControllersBasicStuff.Controllers
             return new HtmlResult("<h2>Дратути</h2>");
         }
 
+        
+        public RedirectResult GetVoid()
+        {//переадресация на метод контакт
+            return Redirect("/Home/Contact");
+        }
 
 
         public string GetId(int id)
@@ -71,11 +76,11 @@ namespace ControllersBasicStuff.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ImageResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            //ViewBag.Message = "Your contact page.";
+            string path = "../Content/Images/yz9uxVlpO0U.jpg";
+            return new ImageResult(path);
         }
     }
 }
