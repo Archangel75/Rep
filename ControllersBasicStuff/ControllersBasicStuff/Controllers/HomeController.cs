@@ -36,17 +36,27 @@ namespace ControllersBasicStuff.Controllers
 
         
         public ActionResult GetVoid()
-        {//переадресация на метод контакт
-            //return Redirect("/Home/Contact");'
-            //если в запросе не будет '?id=...' то тут будет ошибка.
-            if (Int32.Parse(Request.Params["id"]) > 3)
+        {
+            try
             {
-                //return RedirectToRoute(new { controller = "Home", action = "Contact" });
-                //return RedirectToAction("Contact"); если метод в другом контроллере, то нужно указывать контроллер вторым параметром.
-                //метод, контроллер, объект с хранимыми параметрами.
-                return RedirectToAction("Square", "Home", new { a = 10, b = 12 });
+                //переадресация на метод контакт
+                //return Redirect("/Home/Contact");'
+                //если в запросе не будет '?id=...' то тут будет ошибка.
+                if (Int32.Parse(Request.Params["id"]) > 3)
+                {
+                    //return RedirectToRoute(new { controller = "Home", action = "Contact" });
+                    //return RedirectToAction("Contact"); если метод в другом контроллере, то нужно указывать контроллер вторым параметром.
+                    //метод, контроллер, объект с хранимыми параметрами.
+                    return RedirectToAction("Square", "Home", new { a = 10, b = 12 });
+                }
+                return View("About");
             }
-            return View("About");
+            catch
+            {
+                //return new HttpStatusCodeResult(404);
+                //return new HttpUnauthorizedResult();
+                return new HttpNotFoundResult();
+            }
             
         }
 
