@@ -13,13 +13,22 @@ namespace ControllersBasicStuff.Controllers
 
         public string GetContext()
         {
-            string browser = HttpContext.Request.Browser.Browser;
+            
+
+            //string browser = HttpContext.Request.Browser.Browser;
+            string browser = Request.Browser.Browser;
             string user_agent = HttpContext.Request.UserAgent;
             string url = HttpContext.Request.RawUrl;
             string ip = HttpContext.Request.UserHostAddress;
             string referrer = HttpContext.Request.UrlReferrer == null ? "" : HttpContext.Request.UrlReferrer.AbsoluteUri;
             return "<p>Browser: " + browser + " </p>  <p>User-agent: " + user_agent + " </p>  <p>Url: " + url + " </p>  <p>Refferer: " + referrer
                     + " </p>  <p>Ipaddress: " + ip + " </p>  ";
+        }
+
+        public void GetCont()
+        {
+            string a = Request.UserHostName;
+            HttpContext.Response.Write("Дратути!!! " + a);
         }
 
         public ActionResult Index()
