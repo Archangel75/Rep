@@ -28,11 +28,26 @@ namespace ControllersBasicStuff.Controllers
         public void GetCont()
         {
             string a = Request.UserHostName;
-            HttpContext.Response.Write("Дратути!!! " + a);
+            //HttpContext.Response.Write("Дратути!!! " + a);
+            Response.Write("Дратути!!! " + a);
+        }
+
+        public void GetData()
+        {
+            string id = Request.Cookies["id"].Value;
+            Response.Write(id);
+            
         }
 
         public ActionResult Index()
         {
+            Response.Cookies["id"].Value = "ca-4353w";
+
+            string path = "~/Content/Images/yz9uxVlpO0U.jpg";
+            if (System.IO.File.Exists(Server.MapPath(path)))
+            {
+                ViewBag.Foto = VirtualPathUtility.ToAbsolute(path);
+            }
             return View();
         }
 
