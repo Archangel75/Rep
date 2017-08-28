@@ -18,8 +18,8 @@ namespace ControllersBasicStuff.Controllers
             string url = HttpContext.Request.RawUrl;
             string ip = HttpContext.Request.UserHostAddress;
             string referrer = HttpContext.Request.UrlReferrer == null ? "" : HttpContext.Request.UrlReferrer.AbsoluteUri;
-            return @"<p>Browser: " + browser + " </p> /n <p>User-agent: " + user_agent + " </p> /n <p>Url: " + url + " </p> /n <p>Refferer: " + referrer
-                    + " </p> /n <p>Ipaddress: " + ip + " </p> /n ";
+            return "<p>Browser: " + browser + " </p>  <p>User-agent: " + user_agent + " </p>  <p>Url: " + url + " </p>  <p>Refferer: " + referrer
+                    + " </p>  <p>Ipaddress: " + ip + " </p>  ";
         }
 
         public ActionResult Index()
