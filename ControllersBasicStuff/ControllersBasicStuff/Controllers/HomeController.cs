@@ -11,8 +11,9 @@ namespace ControllersBasicStuff.Controllers
     {
         public ActionResult Index()
         {
-            //return View();
-            return View("~/Views/Some/Index.cshtml");
+            ViewData["Head"] = "Привет мир!";
+            ViewBag.Head = "Дратути";
+            return View();
         }
 
         public ActionResult GetImage()
