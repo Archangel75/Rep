@@ -10,7 +10,7 @@ namespace ViewsBasucs.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View("~/Views/Some/Someview.cshtml");
         }
 
         public ActionResult About()
