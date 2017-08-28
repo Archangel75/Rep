@@ -12,7 +12,7 @@ namespace ControllersBasicStuff.Controllers
         public ActionResult Index()
         {
             //return View();
-            return View("About");
+            return View("~/Views/Some/Index.cshtml");
         }
 
         public ActionResult GetImage()
