@@ -21,6 +21,14 @@ namespace ControllersBasicStuff.Controllers
         }
 
 
+        public FilePathResult GetFile()
+        {
+            string file_path = Server.MapPath("~/Files/About the program.txt");
+            string file_type = "application/txt";
+            string file_name = "About the program.txt";
+            return File(file_path, file_type, file_name);
+        }
+
 
         public ActionResult GetHtml()
         {

@@ -1,0 +1,74 @@
+﻿Adobe Photoshop Lightroom CC 2015.9 (6.9) Final
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Год/Дата Выпуска: 2017
+Версия программы: 2015.9 (6.9)
+Разработчик: Copyright © 2017 Adobe Systems Software Ireland Ltd. All rights reserved. http://www.adobe.com/ru/products/photoshop-lightroom.html
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Разрядность: 64bit
+Язык интерфейса: Русский | Английский и другие
+Лечение: Присутствует
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Системные требования: https://helpx.adobe.com/lightroom/system-requirements.html
+Windows
+■ Intel® or AMD processor with 64-bit support*
+■ Windows 10, Windows 8.1, or Windows 7 with Service Pack 1
+■ 2 GB of RAM (8 GB recommended)
+■ 1024 x 768 display
+■ 1 GB of Video RAM (VRAM). 2 GB of dedicated VRAM is suggested for large, high-resolution monitors, such as 4K- and 5K-resolution monitors.
+■ 2 GB of available hard-disk space
+■ DVD-ROM drive required if purchasing Adobe® Photoshop® Lightroom® retail boxed version
+■ OpenGL 3.3 and DirectX 10-capable video adapter for GPU-related functionality
+■ Internet connection and registration are necessary for required software activation, validation of subscriptions, and access to online services.**
+
+* Dual-core processor recommended for HD or AVCHD video functionality.
+** NOTE: Internet connection, Adobe ID, and acceptance of license agreement required to activate and use this product. This product may integrate with or allow access to certain Adobe or third-party hosted online services. Adobe services are available only to users 13 and older and require agreement to additional terms of use and the Adobe Privacy Policy. Applications and services may not be available in all countries or languages and may be subject to change or discontinuation without notice. Additional fees or membership charges may apply.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Adobe Photoshop Lightroom - Lightroom объединяет фотографии в «коллекции» — виртуальные сборища файлов, по которым может быстро делать поиск. Он хранит информацию о ключевых словах, превью и метаданных не в каждом графическом файле, а в централизованной базе данных (движок SQLite). Поэтому к базе можно обращаться и по поводу фотографий, которые сейчас в архиве на DVD. Размер программы существенно меньше, чем у Bridge, запускается она быстрее и занимает меньше оперативной памяти. В общем, Lightroom рассчитан исключительно на фотографов, которых интересует обработка и каталогизация фотографий, а не интеграция всего и вся. Другая особенность пакета Photoshop Lightroom — разделение процесса работы со снимками на отдельные этапы. Для каждого из них предназначен свой функциональный модуль с соответствующим набором инструментов и палитр настроек.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+В программе имеется пять модулей:
+▪ Загрузка, каталогизация и поиск фотографий (Library)
+▪ Коррекция цветовых и тональных параметров изображений (Develop)
+▪ Создание слайд-шоу (Slideshow)
+▪ Печать (Print)
+▪ Создание веб-страниц для публикации коллекций изображений в Интернете (Web)
+
+Основные характеристики Adobe Photoshop Lightroom:
+▪ Интуитивная среда с инструментами, разработанными специально для фотографов.
+▪ Организация, оценка изображений и добавление знака авторских прав.
+▪ Создание предварительных настроек изображений.
+▪ Интеграция с Photoshop.
+▪ Регулировка настроек множества изображений одним кликом.
+▪ Кроссплатформенность – поддержка 64-разрадной архитектуры, платформ Mac OS и Windows.
+▪ Поддержка видеофайлов DSLR – взаимодействие с большинством цифровых камер SLR позволяет легко контролировать и организовывать статичные фотографии и видео.
+▪ Добавление водяных знаков – встраивание логотипа (текстовых или графических водяных знаков) в изображение, регулировка размера, позиции и прозрачности.
+▪ Быстрый импорт изображений – интерфейс импорта прост в навигации, содержит понятные визуальные индикаторы того, где и как будут расположены фотографии после импорта.
+▪ Коррекция перспективы – возможность недеструктивного исправления перспективы картинки.
+▪ Гибкие настройки печати. Инструменты позволяют перетаскивать одно изображение или несколько снимков на страницу, а затем изменять их расположение и размер.
+▪ Коррекция линз – исправление дефектов линз, таких как нарушение геометрии, хроматические аберрации, виньетирование и т. п.
+▪ Выгрузка в Интернет – возможность загружать изображения на Facebook, SmugMug и Flickr. При добавлении комментариев к снимкам эти сообщения мгновенно отображаются в библиотеке Adobe Photoshop Lightroom рядом с соответствующими фотографиями.
+▪ Создание слайд-шоу с музыкальным сопровождением. Готовые слайд-шоу легко выкладывать в общий доступ с помощью экспорта (в том числе в высоком разрешении).
+▪ Фотосъемка в связке с компьютером – мгновенный импорт и отображения фото после фиксации картинки камерой.
+▪ Симуляция зернистости фотопленки. Инструменты позволяют легко контролировать параметры зернистости, которую можно применять к изображению для симуляции внешнего вида пленки.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Lightroom / Common Questions:
+https://helpx.adobe.com/lightroom/faq.html
+
+Обучение и поддержка:
+https://helpx.adobe.com/ru/support.html
+
+Поддерживаемые форматы файлов:
+Lightroom supports most native camera raw file formats in addition to PNG, DNG, TIFF, and JPEG formats. In other words, it supports the formats primarily used in digital cameras. Lightroom also supports the PSD file format for enhanced integration with Photoshop. For a complete list of raw format support by camera make and model, see the Camera Raw page.
+
+Новые возможности:
+http://www.adobe.com/ru/products/photoshop-lightroom/features.html
+
+How does Lightroom CC differ from Photoshop?
+Lightroom CC includes all the tools you need for most digital photography tasks in one intuitive solution. It's your go-to app for organizing, enhancing, and sharing your images, every day. It helps photographers work faster and more efficiently with one image, a set of images, or a large image library. Photoshop is the industry standard in digital image editing, with advanced tools used by photographers, graphic designers, and other graphics professionals when they need complete control to perform detailed, pixel-level editing and work with multilayered files. Get both Lightroom and Photoshop CC as a part of the Creative Cloud Photography plan.
+
+Сравнение:
+http://www.adobe.com/ru/products/photoshop-lightroom/versions.html
+
+Что нового в версии:
+http://blogs.adobe.com/lightroomjournal/
+http://blogs.adobe.com/lightroomjournal/2017/03/lightroom-cc-2015-9-now-available.html
+https://helpx.adobe.com/lightroom/help/whats-new.html
