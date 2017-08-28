@@ -13,6 +13,11 @@ namespace ControllersBasicStuff.Controllers
         {
             ViewData["Head"] = "Привет мир!";
             ViewBag.Head = "Дратути";
+
+            ViewBag.Fruit = new List<string>
+            {
+                "олени","бараны","козлы"
+            };
             return View();
         }
 

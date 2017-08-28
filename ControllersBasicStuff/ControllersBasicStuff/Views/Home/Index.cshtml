@@ -3,4 +3,10 @@
 }
 
 <h2>@ViewData["Head"]</h2>
-<h3>@ViewBag.Head</h3>
+
+<ul>
+    @foreach (var a in ViewBag.Fruit)
+    {
+        <li>@a</li>
+    }
+</ul>
