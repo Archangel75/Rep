@@ -1,6 +1,7 @@
 ﻿using ControllersBasicStuff.Util;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -29,6 +30,23 @@ namespace ControllersBasicStuff.Controllers
             return File(file_path, file_type, file_name);
         }
 
+        public FileContentResult GetBytes()
+        {
+            string file_path = Server.MapPath("~/Files/About the program.txt");
+            byte[] mas = System.IO.File.ReadAllBytes(file_path);
+            string file_type = "application/txt";
+            string file_name = "About the program.txt";
+            return File(mas, file_type, file_name);
+        }
+
+        public FileStreamResult GetStream()
+        {
+            string file_path = Server.MapPath("~/Files/About the program.txt");
+            FileStream fs = new FileStream(file_path, FileMode.Open);
+            string file_type = "application/txt";
+            string file_name = "About the program.txt";
+            return File(fs, file_type, file_name);
+        }
 
         public ActionResult GetHtml()
         {
