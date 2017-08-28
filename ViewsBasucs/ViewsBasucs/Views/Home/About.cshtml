@@ -1,7 +1,28 @@
 ﻿@{
     ViewBag.Title = "About";
+    int i = 2;
+    List<string> fruits = new List<string> { "ябло", "тыбло", "груша" };
 }
+
+
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
+
+
+<h3>@DateTime.Now.ToLongDateString()</h3>
+<p>i++</p>
+@if (i == 2)
+{
+    <p>i равна 2</p>
+}
+else
+{
+<p>i не равна 2</p>
+}
+
+@foreach(string a in fruits)
+{ <p>@a</p>}
+
+
 
 <p>Use this area to provide additional information.</p>
