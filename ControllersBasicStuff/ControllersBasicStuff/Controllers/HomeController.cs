@@ -35,9 +35,15 @@ namespace ControllersBasicStuff.Controllers
         }
 
         
-        public RedirectResult GetVoid()
+        public ActionResult GetVoid()
         {//переадресация на метод контакт
-            return Redirect("/Home/Contact");
+            //return Redirect("/Home/Contact");'
+            if (Int32.Parse(Request.Params["id"]) > 3)
+            {
+                return Redirect("/Home/Contact");
+            }
+            return View("About");
+            
         }
 
 
