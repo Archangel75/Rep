@@ -10,6 +10,18 @@ namespace ControllersBasicStuff.Controllers
 {
     public class HomeController : Controller
     {
+
+        public string GetContext()
+        {
+            string browser = HttpContext.Request.Browser.Browser;
+            string user_agent = HttpContext.Request.UserAgent;
+            string url = HttpContext.Request.RawUrl;
+            string ip = HttpContext.Request.UserHostAddress;
+            string referrer = HttpContext.Request.UrlReferrer == null ? "" : HttpContext.Request.UrlReferrer.AbsoluteUri;
+            return @"<p>Browser: " + browser + " </p> /n <p>User-agent: " + user_agent + " </p> /n <p>Url: " + url + " </p> /n <p>Refferer: " + referrer
+                    + " </p> /n <p>Ipaddress: " + ip + " </p> /n ";
+        }
+
         public ActionResult Index()
         {
             return View();
@@ -27,7 +39,9 @@ namespace ControllersBasicStuff.Controllers
             string file_path = Server.MapPath("~/Files/About the program.txt");
 
             //string filep = "E:/Repository/Files/Boop.pdf"; так тоже можно.
-            string file_type = "application/txt";
+            //string file_type = "application/txt";
+            //для всех типов.
+            string file_type = "application/octet-stream";
             string file_name = "About the program.txt";
             return File(file_path, file_type, file_name);
         }
