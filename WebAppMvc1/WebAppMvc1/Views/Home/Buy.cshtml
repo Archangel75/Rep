@@ -6,23 +6,27 @@
 <div>
     <h3> Оформление заказа</h3>
 
-    <form method="post">
-
-        <input type="hidden" value="@ViewBag.CarId" name="CarId" />
+    @using (Html.BeginForm("Buy", "Home", FormMethod.Post))
+    {
+        @*<input type="hidden" value="@ViewBag.CarId" name="CarId" />*@
+        @Html.Hidden("CarId", ViewBag.CarId as string)
         <table>
             <tr>
-                <td><p>Введите Фио</p></td>
-                <td><input type="text" name="FIO" /></td>
+                <td><p>@Html.Label("FIO", "Введите имя")</p></td>
+                <td>@Html.TextBox("FIO", "Введите имя")</td>
             </tr>
             <tr>
-                <td><p>Введите адресс доставки</p></td>
+                <td><p>@Html.Label("Address", "Введите адрес")</p></td>
                 <td>
-                    <input type="text" name="Address" />
+                   @Html.TextBox("Address", "Введите адрес")
                 </td>
             </tr>
             <tr><td><input type="submit" value="Отправить" /></td></tr>
         </table>
+    }
 
-    </form>
+    @*<form method="post">      
+
+    </form>*@
 </div>
 
