@@ -34,9 +34,16 @@ namespace WebAppMvc1.Controllers
         //имя параметра совпадает с именем первого параметра хтмл хелпера html.textarea
         //public string GetForm(string text)
         //public string GetForm(bool set)
-        public string GetForm(string Model)
+        public string GetForm(string[] countries)
         {
-            return Model;
+            string result = "";
+            foreach (string a in countries)
+            {
+                result += a;
+                result += ";";
+            }
+
+            return "Вы выбрали :" + result;
             //return set.ToString();
         }
 

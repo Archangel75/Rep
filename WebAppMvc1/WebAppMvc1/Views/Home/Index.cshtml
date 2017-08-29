@@ -34,7 +34,9 @@
 @using (Html.BeginForm("GetForm", "Home", FormMethod.Post))
 {
    
-     @Html.DropDownList("Model", ViewBag.Models as SelectList)
+    @Html.ListBox("countries", new MultiSelectList(new string[] { "Россия", "Украина", "Белорусь"}))
+    
+    @*@Html.DropDownList("Model", ViewBag.Models as SelectList)*@
     
     
     @*@Html.CheckBox("set", false) <span>Включить</span>*@
