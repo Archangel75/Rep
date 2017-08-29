@@ -31,7 +31,11 @@
     
 </div>
 
-@Html.Partial("_GetList")
+@Html.Action("GetList")
+
+@*@Html.Partial("_GetList", new string[] { "rus", "swe", "nor" })*@
+
+@*@@{ Html.RenderPartial("_GetList");}*@
 
 @section Footer     {
     <h5>КАААААААААААААААААААбуп </h5>

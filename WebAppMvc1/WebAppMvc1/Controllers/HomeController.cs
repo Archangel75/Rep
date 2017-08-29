@@ -23,8 +23,8 @@ namespace WebAppMvc1.Controllers
 
         public ActionResult GetList()
         {
-            
-            return PartialView("_GetList");
+            string[] a = new string[] { "rus" , "swed", "nor", "can"};
+            return PartialView("_GetList",a);
         }
 
         public ActionResult CarIndex()
