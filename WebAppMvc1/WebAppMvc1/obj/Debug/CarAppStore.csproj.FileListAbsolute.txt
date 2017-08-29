@@ -98,3 +98,4 @@ E:\Repository\WebAppMvc1\WebAppMvc1\bin\ru\System.Web.WebPages.Razor.resources.d
 E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\CarAppStore.csproj.CoreCompileInputs.cache
 E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\CarAppStore.dll
 E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\CarAppStore.pdb
+E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\CarAppStore.csprojResolveAssemblyReference.cache
