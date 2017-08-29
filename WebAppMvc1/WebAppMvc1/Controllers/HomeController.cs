@@ -20,6 +20,16 @@ namespace WebAppMvc1.Controllers
             return View(carList);
         }
 
+
+        public ActionResult CarIndex()
+        {
+            var carList = carDb.Cars;
+            //ViewBag.Cars = carList;
+
+
+            return View(carList);
+        }
+
         [HttpGet]
         public ActionResult Buy(int id)
         {
