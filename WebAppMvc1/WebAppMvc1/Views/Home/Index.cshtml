@@ -1,6 +1,6 @@
 ﻿@{ 
-    //Layout = "~/Views/Shared/_Layboop.cshtml";
-    //Layout = null;
+//Layout = "~/Views/Shared/_Layboop.cshtml";
+//Layout = null;
 }
 
 @using WebAppMvc1.Models;
@@ -19,34 +19,56 @@
             <td></td>
         </tr>
        @foreach (var car in Model)
-        {
+       {
             <tr>
                 <td><p>@car.Name</p></td>
                 <td><p>@car.Model</p></td>
                 <td><p>@car.Price</p></td>
                 <td><p><a href="/Home/Buy/@car.id">Купить машину</a></p></td>
             </tr>
-        }
+       }
     </table>
     
 </div>
 
+@*@helper CarList(IEnumerable<Car> cars)
+        {
+            <ul>
+                @foreach (Car b in cars)
+                {
+                    <li>@b.Name</li>
+                }
+            </ul>
+        }
+    <h3>Список машинок</h3>
+    @CarList(Model)
+    *@
 
 
-@helper CarList(IEnumerable<Car> cars)
+@helper  createList(string[] all)
 {
     <ul>
-        @foreach (Car b in cars)
+        @foreach (string s in all)
         {
-            <li>@b.Name</li>
+            <li>@s</li>
         }
     </ul>
+
 }
 
-<h3>Список машинок</h3>
-@CarList(Model)
+@{ 
+    string[] cities = new string[] { "Москва", "Осло", "Стокгольм"};
+}
 
+@{
+    string[] countries = new string[] { "Россия", "Норвегия", "Швеция" };
+}
 
+<h3>города</h3>
+@createList(cities)
+
+<h3>страны</h3>
+@createList(countries)
 
 
 
