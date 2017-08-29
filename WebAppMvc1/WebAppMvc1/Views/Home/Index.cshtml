@@ -1,4 +1,4 @@
-﻿@model IEnumerable<>
+﻿@model IEnumerable<WebAppMvc1.Models.Car>
 @{
     ViewBag.Title = "Home Page";
 }
@@ -12,7 +12,7 @@
             <td>Цена</td>
             <td></td>
         </tr>
-        @foreach (var car in ViewBag.Cars)
+        @foreach (var car in Model)
         {
             <tr>
                 <td><p>@car.Name</p></td>
