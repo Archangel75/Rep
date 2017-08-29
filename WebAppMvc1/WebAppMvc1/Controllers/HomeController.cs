@@ -15,7 +15,7 @@ namespace WebAppMvc1.Controllers
         {
             var carList = carDb.Cars;
             //ViewBag.Cars = carList;
-
+            ViewBag.Message = "Частичное представление";
 
             return View(carList);
         }
@@ -23,7 +23,7 @@ namespace WebAppMvc1.Controllers
 
         public ActionResult GetList()
         {
-            ViewBag.Message = "Частичное представление";
+            
             return PartialView("_GetList");
         }
 
