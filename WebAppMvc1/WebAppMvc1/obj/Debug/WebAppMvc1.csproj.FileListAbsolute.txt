@@ -47,9 +47,6 @@ E:\Repository\WebAppMvc1\WebAppMvc1\bin\roslyn\vbc.exe.config
 E:\Repository\WebAppMvc1\WebAppMvc1\bin\roslyn\vbc.rsp
 E:\Repository\WebAppMvc1\WebAppMvc1\bin\roslyn\VBCSCompiler.exe
 E:\Repository\WebAppMvc1\WebAppMvc1\bin\roslyn\VBCSCompiler.exe.config
-E:\Repository\WebAppMvc1\WebAppMvc1\bin\WebAppMvc1.dll.config
-E:\Repository\WebAppMvc1\WebAppMvc1\bin\WebAppMvc1.dll
-E:\Repository\WebAppMvc1\WebAppMvc1\bin\WebAppMvc1.pdb
 E:\Repository\WebAppMvc1\WebAppMvc1\bin\Antlr3.Runtime.dll
 E:\Repository\WebAppMvc1\WebAppMvc1\bin\Microsoft.AI.Agent.Intercept.dll
 E:\Repository\WebAppMvc1\WebAppMvc1\bin\Microsoft.AI.DependencyCollector.dll
@@ -93,9 +90,12 @@ E:\Repository\WebAppMvc1\WebAppMvc1\bin\ru\System.Web.WebPages.Deployment.resour
 E:\Repository\WebAppMvc1\WebAppMvc1\bin\ru\System.Web.WebPages.Razor.resources.dll
 E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\WebAppMvc1.csprojResolveAssemblyReference.cache
 E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\WebAppMvc1.csproj.CoreCompileInputs.cache
-E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\WebAppMvc1.dll
-E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\WebAppMvc1.pdb
 E:\Repository\WebAppMvc1\WebAppMvc1\bin\EntityFramework.dll
 E:\Repository\WebAppMvc1\WebAppMvc1\bin\EntityFramework.SqlServer.dll
 E:\Repository\WebAppMvc1\WebAppMvc1\bin\EntityFramework.xml
 E:\Repository\WebAppMvc1\WebAppMvc1\bin\EntityFramework.SqlServer.xml
+E:\Repository\WebAppMvc1\WebAppMvc1\bin\CarAppStore.dll.config
+E:\Repository\WebAppMvc1\WebAppMvc1\bin\CarAppStore.dll
+E:\Repository\WebAppMvc1\WebAppMvc1\bin\CarAppStore.pdb
+E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\CarAppStore.dll
+E:\Repository\WebAppMvc1\WebAppMvc1\obj\Debug\CarAppStore.pdb
