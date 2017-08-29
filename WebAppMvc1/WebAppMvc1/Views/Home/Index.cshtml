@@ -1,4 +1,8 @@
-﻿@using WebAppMvc1.Models;
+﻿@{ 
+    Layout = "~/Views/Shared/_Layboop.cshtml";
+}
+
+@using WebAppMvc1.Models;
 @model IEnumerable<Car>
 @{
     ViewBag.Title = "Home Page";
@@ -13,7 +17,7 @@
             <td>Цена</td>
             <td></td>
         </tr>
-        @foreach (var car in Model)
+       @foreach (var car in Model)
         {
             <tr>
                 <td><p>@car.Name</p></td>
