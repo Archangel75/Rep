@@ -21,6 +21,12 @@ namespace WebAppMvc1.Controllers
         }
 
 
+        public ActionResult GetList()
+        {
+            ViewBag.Message = "Частичное представление";
+            return PartialView("_GetList");
+        }
+
         public ActionResult CarIndex()
         {
             var carList = carDb.Cars;
