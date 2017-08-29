@@ -15,5 +15,16 @@
         </url>
     </nav>
     @RenderBody()
+    @*@<footer>@RenderSection("Footer", false)</footer>*@
+    <footer>
+        @if (IsSectionDefined("Footer"))
+        {
+            @RenderSection("Footer")
+        }
+        else
+        {
+            <span>Некий контент по умолчанию который слапнется в футер.</span>
+        }
+    </footer>
 </body>
 </html>
