@@ -31,6 +31,22 @@
     
 </div>
 
+@using (Html.BeginForm("GetForm", "Home", FormMethod.Post))
+{
+    @Html.RadioButton("color", "red")
+    <span>Красный</span><br />
+    @Html.RadioButton("color", "blue")
+    <span>синий</span><br />
+    @Html.RadioButton("color", "green",true)
+    <span>зеленый</span>
+
+
+
+    @*@Html.TextArea("text","дратути", 5, 50, null)*@
+    <input type="submit" value="Send" />
+}
+
+
 @*@helper CarList(IEnumerable<Car> cars)
         {
             <ul>
@@ -56,8 +72,9 @@
 
     }*@
 
+
 @{ 
-    string[] cities = new string[] { "Москва", "Осло", "Стокгольм"};
+        string[] cities = new string[] { "Москва", "Осло", "Стокгольм" };
 }
 
 @{

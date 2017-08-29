@@ -27,6 +27,14 @@ namespace WebAppMvc1.Controllers
             return PartialView("_GetList",a);
         }
 
+        [HttpPost]
+        //имя параметра совпадает с именем первого параметра хтмл хелпера html.textarea
+        //public string GetForm(string text)
+        public string GetForm(string color)
+        {
+            return color;
+        }
+
         public ActionResult CarIndex()
         {
             var carList = carDb.Cars;
