@@ -45,16 +45,16 @@
     *@
 
 
-@helper  createList(string[] all)
-{
-    <ul>
-        @foreach (string s in all)
-        {
-            <li>@s</li>
-        }
-    </ul>
+@*@helper  createList(string[] all)
+    {
+        <ul>
+            @foreach (string s in all)
+            {
+                <li>@s</li>
+            }
+        </ul>
 
-}
+    }*@
 
 @{ 
     string[] cities = new string[] { "Москва", "Осло", "Стокгольм"};
@@ -64,11 +64,17 @@
     string[] countries = new string[] { "Россия", "Норвегия", "Швеция" };
 }
 
-<h3>города</h3>
-@createList(cities)
+@*<h3>города</h3>
+    @createList(cities)
 
-<h3>страны</h3>
-@createList(countries)
+    <h3>страны</h3>
+    @createList(countries)*@
+
+@* можно делать и так, и так. *@
+@using CarAppStore.Helpers
+@Html.CreateList(cities)
+@ListHelper.CreateList(Html,countries)
+
 
 
 
