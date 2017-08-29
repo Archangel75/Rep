@@ -30,9 +30,9 @@ namespace WebAppMvc1.Controllers
         [HttpPost]
         //имя параметра совпадает с именем первого параметра хтмл хелпера html.textarea
         //public string GetForm(string text)
-        public string GetForm(string color)
+        public string GetForm(bool set)
         {
-            return color;
+            return set.ToString();
         }
 
         public ActionResult CarIndex()

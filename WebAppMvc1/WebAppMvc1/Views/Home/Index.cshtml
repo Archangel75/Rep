@@ -33,16 +33,17 @@
 
 @using (Html.BeginForm("GetForm", "Home", FormMethod.Post))
 {
-    @Html.RadioButton("color", "red")
+    @Html.CheckBox("set", false) <span>Включить</span>
+
+    @*@Html.RadioButton("color", "red")
     <span>Красный</span><br />
     @Html.RadioButton("color", "blue")
     <span>синий</span><br />
     @Html.RadioButton("color", "green",true)
-    <span>зеленый</span>
-
-
+    <span>зеленый</span>*@
 
     @*@Html.TextArea("text","дратути", 5, 50, null)*@
+
     <input type="submit" value="Send" />
 }
 
