@@ -33,7 +33,11 @@
 
 @using (Html.BeginForm("GetForm", "Home", FormMethod.Post))
 {
-    @Html.CheckBox("set", false) <span>Включить</span>
+   
+     @Html.DropDownList("Model", ViewBag.Models as SelectList)
+    
+    
+    @*@Html.CheckBox("set", false) <span>Включить</span>*@
 
     @*@Html.RadioButton("color", "red")
     <span>Красный</span><br />

@@ -17,6 +17,9 @@ namespace WebAppMvc1.Controllers
             //ViewBag.Cars = carList;
             ViewBag.Message = "Частичное представление";
 
+            SelectList models = new SelectList(carDb.Cars, "Model", "Name");
+            ViewBag.Models = models;
+
             return View(carList);
         }
 
@@ -30,9 +33,11 @@ namespace WebAppMvc1.Controllers
         [HttpPost]
         //имя параметра совпадает с именем первого параметра хтмл хелпера html.textarea
         //public string GetForm(string text)
-        public string GetForm(bool set)
+        //public string GetForm(bool set)
+        public string GetForm(string Model)
         {
-            return set.ToString();
+            return Model;
+            //return set.ToString();
         }
 
         public ActionResult CarIndex()
