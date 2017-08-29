@@ -14,9 +14,10 @@ namespace WebAppMvc1.Controllers
         public ActionResult Index()
         {
             var carList = carDb.Cars;
-            ViewBag.Cars = carList;
+            //ViewBag.Cars = carList;
 
-            return View();
+
+            return View(carList);
         }
 
         [HttpGet]
