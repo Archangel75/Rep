@@ -9,11 +9,17 @@ namespace WebAppMvc1.Controllers
 {
     public class HomeController : Controller
     {
+        //если объявлена глобальная переменная базы данных, то её надо чистить(dispose см снизу.)
         CarContext carDb = new CarContext();
 
         public ActionResult Index()
         {
-            var carList = carDb.Cars;
+            //лучше делать так:
+            
+            using (CarContext carDb2 = new CarContext())
+            {
+                var carList = carDb.Cars;
+            }
             //ViewBag.Cars = carList;
             ViewBag.Message = "Частичное представление";
 
@@ -72,6 +78,12 @@ namespace WebAppMvc1.Controllers
             carDb.Purchases.Add(purchase);
             carDb.SaveChanges();
             return "Спасибо за покупку!";
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            carDb.Dispose();
+            base.Dispose(disposing);
         }
     }
 }
