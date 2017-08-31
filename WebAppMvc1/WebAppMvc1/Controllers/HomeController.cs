@@ -29,6 +29,14 @@ namespace WebAppMvc1.Controllers
             return View(carDb.Cars.ToList());
         }
 
+        public ActionResult GetCar(int id)
+        {
+            Car c = carDb.Cars.Find(id);
+            if (c == null)
+                return HttpNotFound();
+            return View(c);
+        }
+
 
         public ActionResult GetList()
         {

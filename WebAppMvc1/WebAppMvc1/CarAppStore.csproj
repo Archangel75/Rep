@@ -199,6 +199,7 @@
     <Content Include="Views\Home\CarIndex.cshtml" />
     <Content Include="Views\Shared\_Layboop.cshtml" />
     <Content Include="Views\Home\_GetList.cshtml" />
+    <Content Include="Views\Home\GetCar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

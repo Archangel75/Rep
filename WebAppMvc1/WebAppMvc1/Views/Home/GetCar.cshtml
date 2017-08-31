@@ -1,0 +1,13 @@
+﻿@model WebAppMvc1.Models.Car
+
+@{ ViewBag.Title = "Ало";}
+
+<h2>GetCar</h2>
+<h3>Демонстрация 3 разных хелперов. Обычный, типизированный и типизированный с моделью.</h3>
+
+<h3>Обычный хелпер</h3>
+@Html.Display("Price") <br />
+<h3>Строготипизированный хелпер</h3>
+@Html.DisplayFor(m=>m.Name) <br />
+<h3>Строготипизированный с моделью хелпер</h3>
+@Html.DisplayForModel() 
