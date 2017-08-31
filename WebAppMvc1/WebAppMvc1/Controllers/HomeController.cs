@@ -26,7 +26,7 @@ namespace WebAppMvc1.Controllers
             SelectList models = new SelectList(carDb.Cars, "Model", "Name");
             ViewBag.Models = models;
 
-            return View(carList);
+            return View(carDb.Cars.ToList());
         }
 
 
