@@ -1,4 +1,4 @@
-﻿
+﻿@model WebAppMvc1.Models.Purchase
 @{
     ViewBag.Title = "Покупка машины";
 }
@@ -9,11 +9,13 @@
     @using (Html.BeginForm("Buy", "Home", FormMethod.Post))
     {
         @*<input type="hidden" value="@ViewBag.CarId" name="CarId" />*@
-        @Html.Hidden("CarId", ViewBag.CarId as string)
+        @*@Html.Hidden("CarId", ViewBag.CarId as string)*@
+
+        @Html.HiddenFor(m=>m.CarId )
         <table>
             <tr>
                 <td><p>@Html.Label("FIO", "Введите имя")</p></td>
-                <td>@Html.TextBox("FIO", "Введите имя")</td>
+                <td>@Html.TextBoxFor(m=>m.FIO)</td>
             </tr>
             <tr>
                 <td><p>@Html.Label("Address", "Введите адрес")</p></td>

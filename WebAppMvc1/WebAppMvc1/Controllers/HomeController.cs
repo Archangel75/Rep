@@ -60,7 +60,8 @@ namespace WebAppMvc1.Controllers
         public ActionResult Buy(int id)
         {
             ViewBag.CarId = id;
-            return View();
+            Purchase pur = new Purchase { CarId = id, FIO = "Анонимус" };
+            return View(pur);
         }
 
 
