@@ -33,6 +33,24 @@ namespace WebAppMvc1.Controllers
             return View(c);
         }
 
+
+
+        [HttpGet]
+        public ActionResult CreateCar()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult CreateCar(Car car)
+        {
+            carDb.Cars.Add(car);
+            carDb.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+
         //Создание машины
         [HttpGet]
         public ActionResult Create()
