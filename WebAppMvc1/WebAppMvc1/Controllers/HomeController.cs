@@ -19,14 +19,10 @@ namespace WebAppMvc1.Controllers
             using (CarContext carDb2 = new CarContext())
             {
                 var carList = carDb.Cars;
+                return View(carList);
             }
-            //ViewBag.Cars = carList;
-            ViewBag.Message = "Частичное представление";
-
-            SelectList models = new SelectList(carDb.Cars, "Model", "Name");
-            ViewBag.Models = models;
-
-            return View(carDb.Cars.ToList());
+                       
+            
         }
 
         public ActionResult GetCar(int id)
@@ -36,6 +32,70 @@ namespace WebAppMvc1.Controllers
                 return HttpNotFound();
             return View(c);
         }
+
+        //Создание машины
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult Create(Car car)
+        {
+            carDb.Cars.Add(car);
+            carDb.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+
+        //Чтобы не попасться на удочку мошенников и троллей нужно сделать delete подругому.
+        //public ActionResult Delete(int id)
+        //{
+        //    //это не очень круто потому что 2 запроса в базу.
+        //    //Car c = carDb.Cars.Find(id);
+        //    //if (c != null)
+        //    //{
+        //    //    carDb.Cars.Remove(c);
+        //    //    carDb.SaveChanges();
+        //    //}
+        //    //-------------------
+
+        //    Car c = new Car { id = id };
+        //    carDb.Entry(c).State = System.Data.Entity.EntityState.Deleted;
+        //    carDb.SaveChanges();
+        //    return RedirectToAction("Index");
+        //}
+ 
+
+       [HttpGet]
+       public ActionResult Delete(int id)
+       {
+            Car c = carDb.Cars.Find(id);
+            if (c == null)
+            {
+                return HttpNotFound();
+            }
+            return View(c);            
+        }
+        [HttpPost,ActionName("Delete")]
+       public ActionResult DeleteConfirmed(int id)
+        {
+            Car c = carDb.Cars.Find(id);
+            if (c == null)
+            {
+                return HttpNotFound();
+            }
+            carDb.Cars.Remove(c);
+            carDb.SaveChanges();
+            return Redirect.RedirectToAction("Index");
+        }
+
+
+
+
+
 
 
         public ActionResult GetList()

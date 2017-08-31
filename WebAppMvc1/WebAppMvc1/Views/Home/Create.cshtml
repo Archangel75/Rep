@@ -1,0 +1,25 @@
+﻿@model WebAppMvc1.Models.Car
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create car</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Name, "Название авто")
+    <br />
+    @Html.EditorFor(m=>m.Name)
+    <br />
+    @Html.LabelFor(model => model.Model, "Модель авто")
+    <br />
+    @Html.EditorFor(m => m.Model)
+    <br />
+    @Html.LabelFor(model => model.Price, "Цена авто")
+    <br />
+    @Html.EditorFor(m => m.Price)
+    <br />
+    <input type="submit" value="Добавить" />
+
+}

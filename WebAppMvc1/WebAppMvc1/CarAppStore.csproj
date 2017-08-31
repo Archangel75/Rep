@@ -200,6 +200,8 @@
     <Content Include="Views\Shared\_Layboop.cshtml" />
     <Content Include="Views\Home\_GetList.cshtml" />
     <Content Include="Views\Home\GetCar.cshtml" />
+    <Content Include="Views\Home\Create.cshtml" />
+    <Content Include="Views\Home\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
