@@ -1,0 +1,31 @@
+﻿@model WebAppMvc1.Models.Car
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Изменение машины @Model.id</h2>
+@using (Html.BeginForm())
+{
+    <fieldset>
+        @Html.HiddenFor(m => m.id)
+        <p>
+            @Html.LabelFor(m=>m.Name, "Название машины")
+            <br />
+            @Html.EditorFor(m=>m.Name)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Model, "модель машины")
+            <br />
+            @Html.EditorFor(m => m.Model)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.Price, "Цена машины")
+            <br />
+            @Html.EditorFor(m => m.Price)
+        </p>
+
+        <p><input type="submit" value="Применить"</p>
+    </fieldset>
+}
+
