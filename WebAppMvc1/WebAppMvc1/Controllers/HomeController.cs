@@ -49,8 +49,8 @@ namespace WebAppMvc1.Controllers
             return RedirectToAction("Index");
         }
 
+        #region Чтобы не попасться на удочку мошенников и троллей нужно сделать delete по другому.
 
-        //Чтобы не попасться на удочку мошенников и троллей нужно сделать delete подругому.
         //public ActionResult Delete(int id)
         //{
         //    //это не очень круто потому что 2 запроса в базу.
@@ -67,9 +67,9 @@ namespace WebAppMvc1.Controllers
         //    carDb.SaveChanges();
         //    return RedirectToAction("Index");
         //}
- 
+#endregion
 
-       [HttpGet]
+        [HttpGet]
        public ActionResult Delete(int id)
        {
             Car c = carDb.Cars.Find(id);
@@ -89,11 +89,32 @@ namespace WebAppMvc1.Controllers
             }
             carDb.Cars.Remove(c);
             carDb.SaveChanges();
-            return Redirect.RedirectToAction("Index");
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return HttpNotFound();
+            }
+            Car car = carDb.Cars.Find(id);
+            if (car != null)
+            {
+                return View(car);
+            }
+            return HttpNotFound();
         }
 
 
-
+        [HttpPost]
+        public ActionResult Edit(Car car)
+        {
+            carDb.Entry(car).State = System.Data.Entity.EntityState.Modified;
+            carDb.SaveChanges();
+            return RedirectToAction("Index");
+        }
 
 
 
