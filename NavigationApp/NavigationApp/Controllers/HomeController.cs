@@ -10,12 +10,15 @@ namespace NavigationApp.Controllers
 {
     public class HomeController : Controller
     {
-        SoccerContext db = new SoccerContext();
+        
         public ActionResult Index()
         {
-            //обязательно нужен инклуд чтобы тим тоже можно было использовать в представлении.
-            var players = db.Players.Include(p => p.Team);
-            return View(players.ToList());
+            using (SoccerContext db = new SoccerContext())
+            {
+                //обязательно нужен инклуд чтобы тим тоже можно было использовать в представлении.
+                var players = db.Players.Include(p => p.Team);
+                return View(players.ToList());
+            }
         }
 
         public ActionResult About()
